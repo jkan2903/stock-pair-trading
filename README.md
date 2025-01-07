@@ -38,12 +38,19 @@ This project identifies pairs of stocks with similar price movement patterns bas
 
 ## Setup and Installation
 (1) Clone this repository:
+
 ```git clone https://github.com/jkan2903/stock-pair-trading.git```
+
 (2) Install required dependencies:
+
 ```pip install pyspark``` (version 3.5.3 was used for this project)
+
 (3) Prepare a stock and closing prices dataset
+
 Follow instructions seen in ```raw-data.py```, and run ```combine-csv.py``` next
+
 (4) Run the script:
+
 ```python stock_similarity.py --input_file <input_csv_path> --output_file <output_json_path> --threshold 0.9 --n_bands 50 --n_rows 2```
 
 
